@@ -11,10 +11,14 @@ import java.util.Map;
 )
 public class FFmpegStream {
 
-  // TODO Add more CodecTypes
   public enum CodecType {
+    UNKNOWN, // usually treated as DATA
     VIDEO,
     AUDIO,
+    DATA,
+    SUBTITLE,
+    ATTACHMENT,
+    NB
   }
 
   public int index;
